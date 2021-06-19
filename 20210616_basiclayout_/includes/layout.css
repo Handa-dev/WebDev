@@ -1,0 +1,45 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(55, 235, 49, 0.815);
+    margin:0;
+    padding:0;
+}
+
+#wrapper{
+
+    border:1px solid whilte;
+    width:1000px;
+    background: white;
+    margin:0 auto;
+}
+
+#header{
+    background-color: burlywood;
+    height:100px;
+}
+
+#menu{
+    background-color: burlywood;
+}
+#menu li{
+    display: inline-block;
+}
+#menu li a{
+    display: block;
+    padding: 10px 10px; 
+}
+#content {
+    background-color: white;
+    width: 800px;
+    float: left;
+}
+#sidebar{
+    background-color: rgb(26, 87, 219);
+    width: 200px;
+    float:right; 
+}
+
+#footer{
+background-color: lightseagreen;
+clear: both;
+}

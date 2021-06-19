@@ -1,0 +1,75 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: grey;
+    margin:0;
+    padding:0;
+}
+
+#wrapper{
+
+    border:0px solid whilte;
+    width:1000px;
+    background: white;
+    margin:0 auto;
+}
+
+#header{
+    background-color: orange;
+    height:100px;
+    padding:0;
+}
+#header h1{
+    padding:20px; /*20210617*/
+}
+
+#menu{
+    background-color: lightseagreen;
+    padding: 1px 10px;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    
+}
+    
+#menu li{
+    display: inline-block;
+}
+
+#menu li a{
+    display: block;
+    padding: 10px 10px; 
+    text-decoration: none; /*20210617*/
+    color:black; /*20210617*/
+}
+/*20210617*/
+#menu li a:hover{
+    background-color: orange; /*20210617*/
+    color:white; /*20210617*/
+}
+#content {
+    background-color: white;
+    
+    float: left;
+    padding: 15px; /*20210617*/
+    box-sizing: border-box; /*20210617*/
+
+}
+#sidebar{
+background-color: blueviolet;
+}
+
+#footer{
+background-color: orange;
+/*clear: both;*/
+}
+
+.container{
+    border: 0px solid black;
+}
+.row{
+    border: 0px solid red;
+}
+.col{
+    border: 0 px solid yellow;
+}
