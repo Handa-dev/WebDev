@@ -51,5 +51,7 @@ include 'includes/header.php';
         </div>
     </div>
 </div>
-
+<div>
+Another example of change here for git
+</div>
 </body>
