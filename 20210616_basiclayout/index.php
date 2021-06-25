@@ -22,7 +22,7 @@ include 'includes/header.php';
     <div class="row">
         <div class="col-md-3" id="sidebar">
             <ul>
-                <li><a href="">HOME</a></li>
+                <li><a href="includes/action/incresingPattern.php">Incresing Pattern</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Gallery</a></li>
                 <li><a href="">Products</a></li>
