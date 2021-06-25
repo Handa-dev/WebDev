@@ -56,7 +56,9 @@ body{
 
 }
 #sidebar{
-background-color: blueviolet;
+/*background-color: blueviolet;*/
+background-color:green;
+
 }
 
 #footer{
