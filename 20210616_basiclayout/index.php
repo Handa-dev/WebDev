@@ -31,8 +31,11 @@ if(!isset($_COOKIE["user"])) {
 }  
 ?>  
 <h1>PHP Session</h1>
-PHP session is used to store and pass information from one page to another temporarily (until user close the website).
+PHP session is used to store and pass information from one page to another temporarily (until user close the website).<br>
 
-PHP session technique is widely used in shopping websites where we need to store and pass cart information e.g. username, product code, product name, product price etc from one page to another.
+PHP session technique is widely used in shopping websites where we need to store and pass cart information <br>
+e.g. username, product code, product name, product price etc from one page to another.<br>
 
-PHP session creates unique user id for each browser to recognize the user and avoid conflict between multiple browsers.
+<b>PHP session creates unique user id for each browser to recognize the user and avoid conflict between multiple browsers.</b><br>
+<li><a href="../20210616_basiclayout/includes/session1.php">session1.php</li>
+<li><a href="../20210616_basiclayout/includes/sessionCounter.php">sessionCounter</li>
