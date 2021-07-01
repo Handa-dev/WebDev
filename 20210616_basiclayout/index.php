@@ -1,50 +1,32 @@
-<h1>PHP file Handling</h1>
-PHP File System allows us to <br>
-- create file, <br>
-- read file line by line, <br>
-- read file character by character, <br>
-- write file, <br>
-- append file, <br>
-- delete file <br>
-- close file.<br>
-<h2>PHP Open File - fopen()</h2>
-The PHP fopen() function is used to open a file. <br>
+<h1>PHP File Upload</h1>
+PHP allows you to upload single and multiple files through few lines of code only. <br>
+PHP file upload features allows you to upload binary and text files both. <br>
+Moreover, you can have the full control over the file to be uploaded through PHP <br>
+authentication and file operation functions. <br>
+<h2>PHP $_FILES</h2>
+The PHP global $_FILES contains all the information of file. <br>
+By the help of $_FILES global, we can <br>
+get file name, <br>
+file type, <br>
+file size, <br>
+temp file name and <br>
+errors associated with file. <br>
+<h3>$_FILES['filename']['name']</h3>
+returns file name. <br>
+<h3>$_FILES['filename']['type']</h3>
+returns MIME type of the file.
+<h3>$_FILES['filename']['size']</h3>
+returns size of the file (in bytes).
+<h3>$_FILES['filename']['tmp_name']</h3>
+returns temporary file name of the file which was stored on the server.
+<h3>$_FILES['filename']['error']</h3>
+returns error code associated with this file.
+<h3>move_uploaded_file() function</h3>
+The move_uploaded_file() function moves the uploaded file to a new location.  <br>
+The move_uploaded_file() function checks internally if the file is uploaded thorough the POST request.  <br>
+It moves the file if it is uploaded through the POST request. <br>
+<h3>example</h3>
+<li> <a href="../20210616_basiclayout/includes/uploadform.html">uploadform.html</a> </li>
 <?php
-$handle = fopen("C:\\xampp\\htdocs\\WebDev-1\\20210616_basiclayout\\myfile.txt", "r"); 
+
 ?>
-<h2>PHP Close File - fclose()</h2>
-The PHP fclose() function is used to close an open file pointer. <br>
-<?php  
-fclose($handle);  
-?> 
-<h2>PHP Read File - fread()</h2>
-The PHP fread() function is used to read the content of the file. <br>
-It accepts two arguments: resource and file size. <br>
-Follow example shows how to get the content of an existing file <br>
-<?php    
-$filename = "C:\\xampp\\htdocs\\WebDev-1\\20210616_basiclayout\\myfile.txt";    
-$handle = fopen($filename, "r");//open file in read mode    
-$contents = fread($handle, filesize($filename));//read file    
-
-echo $contents;//printing data of file  
-fclose($handle);//close file    
-?>    
-<h2>PHP Write File - fwrite()</h2>
-The PHP fwrite() function is used to write content of the string into file. <br>
-<?php  
-$fp = fopen('C:\\xampp\\htdocs\\WebDev-1\\20210616_basiclayout\\myfile.txt', 'w');//open file in write mode  
-fwrite($fp, 'hello ');  
-fwrite($fp, 'php file');  
-fclose($fp);  
-  
-echo "File written successfully";  
-?>  
-<h2>PHP Delete File - unlink()</h2>
-The PHP unlink() function is used to delete file. <br>
-<?php    
-unlink('C:\\xampp\\htdocs\\WebDev-1\\20210616_basiclayout\\myfile.txt');  
-   
-echo "File deleted successfully";  
-?> 
-
-
