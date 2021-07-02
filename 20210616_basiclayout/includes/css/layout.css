@@ -1,6 +1,6 @@
 body{
     font-family: 'Courier New', Courier, monospace;
-    background-color: black;
+    background-color: white;
     margin:0;
     padding:0;
 }
@@ -68,7 +68,7 @@ background-color: orange;
 }
 
 .container{
-    border: 0px solid black;
+    border: 0px white;
 }
 .row{
     border: 0px solid red;
